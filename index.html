@@ -12,11 +12,24 @@
       <a-sky color="lightblue"></a-sky>
       
       <a-entity 
-      ply-model="src:my minecraft world yes 2.ply"
-      position="0 0 -2"
+      ply-model="src:minecraft final.ply"
+      position="0 -5 -2"
       rotation="-90 0 0"
       ></a-entity>
-                 
+        
+      <a-entity 
+      ply-model="src:slime.ply"
+      position="0.5 -2.1 -4"
+      rotation="-90 0 0"
+      scale="0.1 0.1 0.1"
+          animation="
+      property: position;
+      from: 0.5 -3 -4;
+      to: 0.5 -2.8 -4;
+      loop: true;
+      dir: alternate;
+      "
+      ></a-entity>          
     </a-scene>
   </body>
 </html>
